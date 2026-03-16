@@ -1,6 +1,6 @@
 <template>
   <div class="three-room-wrap" ref="rootRef">
-    <iframe :src="iframeSrc" frameborder="0" class="three-room-iframe"></iframe>
+    <iframe src="https://faintout.github.io/threeJsRoom/" frameborder="0" class="three-room-iframe"></iframe>
   </div>
 </template>
 

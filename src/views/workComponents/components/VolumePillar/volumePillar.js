@@ -193,4 +193,4 @@ var VolumePillar = /** @class */ (function () {
     };
     return VolumePillar;
 }());
-// export default VolumePillar
+export default VolumePillar
