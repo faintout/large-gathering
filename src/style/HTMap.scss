@@ -1,0 +1,161 @@
+.minemap-popup {
+  z-index: 1000;
+
+  .minemap-popup-content {
+    background: transparent;
+    box-shadow: none;
+    padding: 0 !important;
+    overflow: unset !important;
+
+    .ht-map-popup-content {
+      //   padding: 0!important;
+      //   border-radius: pxTvw(20)!important;
+      overflow: hidden;
+
+    }
+  }
+
+  .minemap-popup-tip {
+    display: none;
+
+  }
+
+}
+
+.mapboxgl-popup-content {
+  background: unset !important;
+  border-radius: unset;
+  box-shadow: unset !important;
+  padding: unset !important;
+}
+
+.mapboxgl-popup-tip {
+  display: none;
+}
+
+//路口相位样式
+.cross-phase-lane {
+  position: absolute;
+  width: pxTvw(80);
+  height: pxTvw(80);
+  // background: #07297A ;
+  border-radius: 50%;
+  border: pxTvw(6) solid;
+  border-color: #3071FC;
+  box-sizing: border-box;
+  // display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: pxTvw(-10);
+  cursor: pointer;
+
+  // overflow: hidden;
+  &>img {
+    width: pxTvw(48);
+    height: pxTvw(48);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // flex: 1;
+    z-index: 2;
+    // clip-path: circle(50%);
+  }
+
+  //相位时间样式
+  .phase-time {
+    font-family: PingFang SC, PingFang SC;
+    font-weight: 400;
+    @include computed_font(16);
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  &-bg {
+    width: 100%;
+    height: 100%;
+    background: #07297A;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.cross-phase-lane.online {
+  // background: #07297A ;
+  border-color: #3071FC;
+
+  &>.cross-phase-lane-bg {
+    background: #07297A;
+  }
+}
+
+.cross-phase-lane.offline {
+  // background: #434B5A ;
+  border-color: #959BA6;
+
+  &>.cross-phase-lane-bg {
+    background: #434B5A;
+  }
+}
+
+.cross-phase-lane.fault {
+  // background: #832020 ;
+  border-color: #E04F3F;
+
+  &>.cross-phase-lane-bg {
+    background: #832020;
+  }
+}
+
+//呼吸效果
+.bus-breath::before {
+  content: "";
+  width: pxTvw(68);
+  height: pxTvw(68);
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  animation: Breath 1.5s ease-out 0s infinite;
+  background: rgba(48, 113, 252, 0.5);
+  z-index: 0;
+}
+
+.bus-breath::after {
+  content: "";
+  width: pxTvw(68);
+  height: pxTvw(68);
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  animation: Breath 1.5s ease-out 0.75s infinite;
+  background: rgba(48, 113, 252, 0.5);
+  z-index: -1;
+}
+
+@keyframes Breath {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.minemap-ctrl-logo {
+    display: none !important;
+}

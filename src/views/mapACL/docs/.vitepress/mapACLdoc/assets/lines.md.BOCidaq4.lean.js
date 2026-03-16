@@ -1,0 +1,1 @@
+import{_ as i,c as a,o as n,ag as h}from"./chunks/framework.Bld6ESEn.js";const g=JSON.parse('{"title":"Lines 线条功能","description":"","frontmatter":{},"headers":[],"relativePath":"lines.md","filePath":"lines.md"}'),t={name:"lines.md"};function l(k,s,p,e,E,d){return n(),a("div",null,[...s[0]||(s[0]=[h("",180)])])}const y=i(t,[["render",l]]);export{g as __pageData,y as default};

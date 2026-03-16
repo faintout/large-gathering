@@ -1,0 +1,1 @@
+import{_ as s,c as e,o as n,ag as i}from"./chunks/framework.Bld6ESEn.js";const u=JSON.parse('{"title":"HTMap 文档","description":"","frontmatter":{},"headers":[],"relativePath":"README.md","filePath":"README.md"}'),p={name:"README.md"};function t(l,a,d,o,h,c){return n(),e("div",null,[...a[0]||(a[0]=[i("",25)])])}const k=s(p,[["render",t]]);export{u as __pageData,k as default};

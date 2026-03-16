@@ -1,0 +1,1 @@
+import{_ as i,c as a,o as n,ag as h}from"./chunks/framework.Bld6ESEn.js";const g=JSON.parse('{"title":"Popup 弹窗功能","description":"","frontmatter":{},"headers":[],"relativePath":"popup.md","filePath":"popup.md"}'),t={name:"popup.md"};function p(l,s,k,e,E,d){return n(),a("div",null,[...s[0]||(s[0]=[h("",135)])])}const y=i(t,[["render",p]]);export{g as __pageData,y as default};

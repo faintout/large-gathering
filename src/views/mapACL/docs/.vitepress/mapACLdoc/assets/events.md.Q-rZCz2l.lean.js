@@ -1,0 +1,1 @@
+import{_ as i,c as a,o as n,ag as h}from"./chunks/framework.Bld6ESEn.js";const g=JSON.parse('{"title":"事件系统","description":"","frontmatter":{},"headers":[],"relativePath":"events.md","filePath":"events.md"}'),k={name:"events.md"};function l(p,s,t,E,e,d){return n(),a("div",null,[...s[0]||(s[0]=[h("",98)])])}const y=i(k,[["render",l]]);export{g as __pageData,y as default};

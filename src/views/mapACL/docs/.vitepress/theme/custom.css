@@ -1,0 +1,286 @@
+/* HTMap 自定义主题样式 */
+
+/* Hero 标题渐变效果 */
+.VPHero .name {
+  background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+  background: linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.2;
+}
+
+/* 副标题样式 */
+.VPHero .tagline {
+  color: var(--vp-c-text-2);
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Hero 图片背景效果 */
+.VPHero .image-bg {
+  background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
+  filter: blur(68px);
+  opacity: 0.5;
+}
+
+/* 响应式标题大小 */
+@media (min-width: 640px) {
+  .VPHero .name {
+    font-size: 64px;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPHero .name {
+    font-size: 72px;
+  }
+}
+
+/* 按钮样式增强 */
+.VPButton.brand {
+  background: var(--vp-button-brand-bg);
+  color: var(--vp-button-brand-text);
+  border: 1px solid var(--vp-button-brand-border);
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+.VPButton.brand:hover {
+  background: var(--vp-button-brand-hover-bg);
+  border-color: var(--vp-button-brand-hover-border);
+}
+
+.VPButton.alt {
+  background: var(--vp-button-alt-bg);
+  color: var(--vp-button-alt-text);
+  border: 1px solid var(--vp-button-alt-border);
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+.VPButton.alt:hover {
+  background: var(--vp-button-alt-hover-bg);
+  border-color: var(--vp-button-alt-hover-border);
+}
+
+/* Features 卡片样式 */
+.VPFeature {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.VPFeature:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: var(--vp-shadow-2);
+  transform: translateY(-2px);
+}
+
+.VPFeature .icon {
+  font-size: 32px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.VPFeature .title {
+  color: var(--vp-c-text-1);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.VPFeature .details {
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* 代码块样式 */
+.vp-doc div[class*='language-'] {
+  background-color: var(--vp-code-block-bg);
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+.vp-doc div[class*='language-'] code {
+  color: var(--vp-code-block-color);
+  font-family: var(--vp-font-family-mono);
+  font-size: var(--vp-code-font-size);
+  line-height: var(--vp-code-line-height);
+}
+
+/* 链接样式 */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-2);
+}
+
+/* 表格样式增强 */
+.vp-doc table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.vp-doc table thead {
+  background: var(--vp-c-bg-soft);
+}
+
+.vp-doc table th {
+  color: var(--vp-c-text-1);
+  font-weight: 600;
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--vp-c-border);
+}
+
+.vp-doc table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-2);
+}
+
+.vp-doc table tbody tr:hover {
+  background: var(--vp-c-bg-soft);
+}
+
+.vp-doc table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* 自定义块样式 */
+.vp-doc .custom-block {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.vp-doc .custom-block.tip {
+  background: var(--vp-custom-block-tip-bg);
+  border-color: var(--vp-custom-block-tip-border);
+}
+
+.vp-doc .custom-block.warning {
+  background: var(--vp-custom-block-warning-bg);
+  border-color: var(--vp-custom-block-warning-border);
+}
+
+.vp-doc .custom-block.danger {
+  background: var(--vp-custom-block-danger-bg);
+  border-color: var(--vp-custom-block-danger-border);
+}
+
+/* 侧边栏样式 */
+.VPSidebar {
+  background: var(--vp-sidebar-bg-color);
+}
+
+.VPSidebarItem.is-active > .item .link {
+  color: var(--vp-c-brand-1);
+}
+
+/* 导航栏样式 */
+.VPNav {
+  background: var(--vp-nav-bg-color);
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+/* Badge 样式 */
+.vp-doc .badge {
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.vp-doc .badge.tip {
+  background: var(--vp-badge-tip-bg);
+  color: var(--vp-badge-tip-text);
+  border: 1px solid var(--vp-badge-tip-border);
+}
+
+.vp-doc .badge.warning {
+  background: var(--vp-badge-warning-bg);
+  color: var(--vp-badge-warning-text);
+  border: 1px solid var(--vp-badge-warning-border);
+}
+
+.vp-doc .badge.danger {
+  background: var(--vp-badge-danger-bg);
+  color: var(--vp-badge-danger-text);
+  border: 1px solid var(--vp-badge-danger-border);
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-divider);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-brand-1);
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.VPHero {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.VPFeatures {
+  animation: fadeIn 0.8s ease-out 0.2s both;
+}
+
+/* 代码复制按钮 */
+.vp-code-group .tabs {
+  background: var(--vp-code-tab-bg);
+  border-bottom: 1px solid var(--vp-code-tab-divider);
+}
+
+.vp-code-group .tabs label {
+  color: var(--vp-code-tab-text-color);
+}
+
+.vp-code-group .tabs label:hover {
+  color: var(--vp-code-tab-hover-text-color);
+}
+
+.vp-code-group .tabs input:checked + label {
+  color: var(--vp-code-tab-active-text-color);
+  border-bottom: 2px solid var(--vp-code-tab-active-bar-color);
+}
+
